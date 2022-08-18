@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11,IE=EDGE" />    
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<title>《終極斗羅》</title>
+<meta name="keywords" content="網頁遊戲，在線遊戲，大型遊戲，免費遊戲，3D遊戲，微端遊戲，webgame，3D網頁遊戲，終極斗羅，角色扮演，MMO-RPG" >
+<meta name="description" content="。">
+  
+<meta itemprop="name" content="《異世界戰歌》">
+<meta itemprop="image" content="../wwww/images/index.jpg">
+<meta itemprop="description" content="。">
+  
+<meta property="og:title" content="《異世界戰歌》">
+<meta itemprop="image" content="../wwww/images/index.jpg">
+<meta property="og:description" content="" >
+  
+  
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/DifferentWorldwarSongs.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery172.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" /><!--fancybox-->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script><!--fancybox-->
+<script type="text/javascript" src="js/jquery.fancybox.js"></script><!--fancybox-->
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*$('.fancybox').fancybox();*/
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0 
+					}
+				}
+			});
+		});
+
+  
+//01點讚粉絲團
+$(function(){
+	$('.virtual-step .virtual-btn').bind('click',function(){
+		$(this).parents('.virtual-step').next('.virtual-step').removeClass('hide');
+		return false;
+	})
+	$('.virtual-step .virtual-btn').bind('click',function(){
+		$(this).parents('.virtual-step').next('.virtual-step2').removeClass('hide');
+		return false;
+	})
+});
+  
+//04連續五天分享
+$(function(){
+	$('.nanaday-share .nanaday-share-check').bind('click',function(){
+		$(this).parent().find("input.nanaday-share-checkin").removeClass("hide");//簽到勾勾出來
+		$(this).parent().find(".nanaday-share-check").addClass("hide");//按扭換成「已簽到」
+	})
+});
+//第五日
+$(function(){
+	$('.nanaday-share2 .nanaday-share-check2').bind('click',function(){
+		$(this).parent().find("input.nanaday-share-checkin2").removeClass("hide");//簽到勾勾出來
+		$(this).parent().find(".nanaday-share-check2").addClass("hide");//按扭換成「已簽到」
+	})
+});
+  
+  
+</script>
+  
+</head>
+
+<body>
+<div class="wrapper">
+    
+<div class="bg_animation">
+    <div class="slogan zoom-01"><img src="images/slogan.png" class="zoom-slong "/></div>
+    <div class="coin_00"><img src="images/coin_00.png" class="tada_coin_00" /></div>
+</div>    
+        
+  <div class="contents">
+    <!--登入前-->
+    <div class="Top-bar loadingIn" style="display: none;">
+      <div class="top-btn">
+        <a href="#" id="top-btn-home" target="_blank" title="遊戲官網"></a>
+      </div>
+      <div class="top-btn">
+        <a href="#" id="top-btn-loadingIn" title="登入"></a>
+      </div>
+    </div>
+    <!--登入後-->
+    <div class="Top-bar loadingOut">
+      <div class="top-btn">
+        <a href="#" id="top-btn-home" target="_blank" title="遊戲官網"></a>
+      </div>
+      <div class="top-btn">
+        <p>你好：
+          <span>01234567890123456789@facebook.com</span>
+          <a href="#">登出</a>
+        </p>
+        
+      </div>
+    </div>
+      
+ 
+      
+    <div class="header">
+      <div class="Main-menu">
+        <div class="menu_01">
+          <a href="#Section01" class="fancybox-effects-a menu-btn" id="menu01" alt="點讚FB豪禮"></a>
+        </div>
+        <div class="menu_02">
+          <a href="#Section02" class="fancybox-effects-a menu-btn" id="menu02" alt="FB分享好康"></a>
+        </div>
+        <div class="menu_01">
+          <a href="#Section03" class="fancybox-effects-a menu-btn" id="menu03" alt="邀友拿豪禮"></a>
+        </div>
+        <div class="menu_02">
+          <a href="#Section04" class="fancybox-effects-a menu-btn" id="menu04" alt="分享領座騎"></a>
+        </div>
+      </div>
+     <div class="inquire-btn">
+     <a href="#Section05" class="fancybox-effects-a menu-btn">
+         <img src="images/index-receive-btn.png" alt="領取歷史紀錄"/> </a></div> 
+        
+    </div>
+    
+  </div>
+</div>
+<!--lightbox-->
+<!--點讚fb豪禮-->
+<div class="fancybox section-box" id="Section01" style="display: none;">
+  <div class="lightbox-menu">
+    <a href="#Section01" class="fancybox-effects-a ative box-menu01"></a>
+    <a href="#Section02" class="fancybox-effects-a box-menu02"></a>
+    <a href="#Section03" class="fancybox-effects-a box-menu03"></a>
+    <a href="#Section04" class="fancybox-effects-a box-menu04"></a>
+  </div>
+  
+  <div class="Main-Contents">
+    <div class="main-Title title01"></div>
+    <div class="virtual scroll-box">
+      <div class="virtual-step line-1">
+        <div class="virtual-step-title s-title-1"></div>
+        <div class="virtual-fb" id="fb01"></div>
+        <div class="virtual-descr"></div>
+        <input type="button" class="virtual-btn" title="完成點讚" />
+      </div>
+      <div class="virtual-step hide">
+        <div class="virtual-step-title s-title-2"></div>
+        <div class="virtual-fb" id="fb02"></div>
+        <div class="virtual-descr"></div>
+        <input type="button" class="virtual-btn" title="完成點讚" />
+      </div>
+      <div class="virtual-step2 hide line-2">
+        <div class="virtual-step-title s-title-3"></div>
+        <div class="virtual-code">82cau01reyzda9vy</div>
+      </div>
+      <div class="virtual-present">
+        <img src="images/p1.png" alt="點讚fb豪禮"/>
+      </div>
+    </div><!--virtual-->
+  </div>
+  
+</div>
+  
+  
+<!--fb分享好康-->
+<div class="fancybox section-box" id="Section02" style="display: none;">
+  <div class="lightbox-menu">
+    <a href="#Section01" class="fancybox-effects-a box-menu01"></a>
+    <a href="#Section02" class="fancybox-effects-a ative box-menu02"></a>
+    <a href="#Section03" class="fancybox-effects-a box-menu03"></a>
+    <a href="#Section04" class="fancybox-effects-a box-menu04"></a>
+  </div>
+  <div class="Main-Contents">
+    <div class="main-Title title02"></div>
+    <div class="scroll-box">
+      <div class="share-fb">
+        <div class="share-fb-title">
+          <h1>達到<span>30級</span></h1>
+        </div>
+        <div class="share-fb-table">
+          <img src="images/p2-1.png" alt="fb分享好康-達到30級"/>
+        </div>
+        <div class="share-fb-btn">
+           <a href="#" class="share-btn" title="點擊分享"></a>
+          <a href="#reach" class="share-receive-btn" title="領取獎勵"></a>
+        </div>
+      </div>
+      <div class="share-fb">
+        <div class="share-fb-title"> 
+          <h1>達到<span>50級</span></h1>
+        </div>
+        <div class="share-fb-table">
+          <img src="images/p2-2.png" alt="fb分享好康-達到50級" />
+        </div>
+        <div class="share-fb-btn">
+           <a href="#" class="share-btn" title="點擊分享"></a>
+          <a href="#reach" class="share-receive-btn no-btn" title="領取獎勵"></a>
+        </div>
+      </div>
+      <div class="share-fb">
+        <div class="share-fb-title">
+          <h1>完成<span>首儲</span></h1>
+        </div>
+        <div class="share-fb-table">
+          <img src="images/p2-3.png" alt="fb分享好康-完成首儲" />
+        </div>
+        <div class="share-fb-btn">
+           <a href="#" class="share-btn" title="點擊分享"></a>
+          <a href="#reach" class="share-receive-btn no-btn" title="領取獎勵"></a>
+        </div>
+      </div>
+    </div>
+</div>
+  
+</div>
+  
+<!--邀友拿豪禮--> 
+<div class="fancybox section-box" id="Section03" style="display: none;">
+  <div class="lightbox-menu">
+    <a href="#Section01" class="fancybox-effects-a box-menu01"></a>
+    <a href="#Section02" class="fancybox-effects-a box-menu02"></a>
+    <a href="#Section03" class="fancybox-effects-a ative box-menu03"></a>
+    <a href="#Section04" class="fancybox-effects-a box-menu04"></a>
+  </div>
+  <div class="Main-Contents">
+    <div class="main-Title title03"></div>
+    <div class="friend-box">
+      <div class="heading">
+        <div class="heading-title"></div>
+        <div class="heading-friend">
+          <p>邀請好友連結：
+            <input type="text" class="friend-line copydiv" />
+              <button type="button" class="btn btn-default" data-clipboard-action="copy" data-clipboard-target=".copydiv" id="wordbtn">複製</button> 
+            您已成功邀請好友<span>000</span>位</p> 
+            
+        </div>
+      </div>
+      <div class="friend-link">
+        <div class="friend-link-title">
+          <p class="fl-bg">成功邀請<span>4位</span>玩家升到<span>50級</span>的玩家獲得禮包</p>
+          <p>已達成<span>0/4</span></p>
+        </div>
+        <div class="friend-link-table">
+          <img src="images/p3-1.png" alt="邀友好禮"/>
+        </div>
+        <input type="button" class="friend-link-btn" title="領取獎勵"/>
+      </div>
+      <div class="friend-link">
+        <div class="friend-link-title">
+          <p class="fl-bg">成功邀請<span>3位</span>玩家升到<span>80級</span>的玩家獲得禮包</p>
+          <p>已達成<span>0/3</span></p>
+        </div>
+        <div class="friend-link-table">
+          <img src="images/p3-2.png" alt="邀友好禮" />
+        </div>
+        <input type="button" class="friend-link-btn" title="領取獎勵"/>
+      </div>
+      <div class="friend-link">
+        <div class="friend-link-title">
+          <p class="fl-bg">成功邀請<span>2位</span>玩家升到<span>100級</span>的玩家獲得禮包</p>
+          <p>已達成<span>0/2</span></p>
+        </div>
+        <div class="friend-link-table">
+          <img src="images/p3-3.png" alt="邀友好禮" />
+        </div>
+        <input type="button" class="friend-link-btn" title="領取獎勵"/>
+      </div>
+    </div>
+</div>
+  
+</div>
+  
+  
+<!--分享領坐騎-->  
+<div class="fancybox section-box" id="Section04" style="display: none;">
+  <div class="lightbox-menu">
+    <a href="#Section01" class="fancybox-effects-a box-menu01"></a>
+    <a href="#Section02" class="fancybox-effects-a box-menu02"></a>
+    <a href="#Section03" class="fancybox-effects-a box-menu03"></a>
+    <a href="#Section04" class="fancybox-effects-a ative box-menu04"></a>
+  </div>
+  <div class="Main-Contents">
+    <div class="main-Title title04"></div>
+    <div class="day-box scroll-box">
+      <div class="day-one">
+        <div class="nanaday-share">
+          <div class="nanaday-share-title ns-1"></div>
+          <input type="button" class="nanaday-share-check hide" title="分享"/>
+          <input type="button" class="nanaday-share-checkin" title="已分享"/>
+        </div>
+        <div class="nanaday-share">
+          <div class="nanaday-share-title ns-2"></div>
+          <input type="button" class="nanaday-share-check" title="分享"/>
+          <input type="button" class="nanaday-share-checkin hide" title="已分享"/>
+        </div>
+        <div class="nanaday-share">
+          <div class="nanaday-share-title ns-3"></div>
+          <input type="button" class="nanaday-share-check" title="分享"/>
+          <input type="button" class="nanaday-share-checkin hide" title="已分享"/>
+        </div>
+        <div class="nanaday-share">
+          <div class="nanaday-share-title ns-4"></div>
+          <input type="button" class="nanaday-share-check" title="分享"/>
+          <input type="button" class="nanaday-share-checkin hide" title="已分享"/>
+        </div>
+        
+      </div>
+      
+      <div class="day-five">
+        <div class="nanaday-share2">
+          <div class="nanaday-share-present">
+            <img src="images/04-5day-p.png" alt="絕版座騎"/>
+          </div>
+          <div class="nanaday-share-title ns-5"></div>
+          <input type="button" class="nanaday-share-check2 hide" title="領取"/>
+          <input type="button" class="nanaday-share-checkin2"  title="未達成"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!--領取歷史紀錄-->  
+<div class="fancybox inquire-box" id="Section05" style="display: none;">
+  <div class="inquire-Main-Contents">
+    <div class="main-Title title05"></div>
+      <div class="a2">
+      <div class="a2-box pc-table">
+        <table class="a2-box-table">
+          <tbody>
+            <tr>
+              <td>序號分類</td>
+              <td>領取時間</td>
+              <td>虛寶序號</td>
+            </tr>
+            <tr>
+              <td >點讚禮包</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr>
+              <tr>
+              <td >分享-30等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr>  
+              <tr>
+              <td >分享-首儲</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr>  
+            <tr>
+              <td >邀有-4位50等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+              <tr>
+              <td >分享-首儲</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr>  
+            <tr>
+              <td >邀友-2位100等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+           <tr>
+              <td >邀友-2位100等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+           <tr>
+              <td >邀友-2位100等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+           <tr>
+              <td >邀友-2位100等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+           <tr>
+              <td >邀友-2位100等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+                     <tr>
+              <td >邀友-2位100等</td>
+              <td >2020/06/23 10:00<br></td>
+              <td >12345687890abcsefghijkl</td>
+            </tr> 
+          </tbody>
+        </table>    
+        
+      </div>
+      </div>
+    </div>      
+</div>    
+ 
+    
+
+<!--領取序號 達成條件-->
+<div class="lightbox-target" id="reach">
+  <div class="content">
+    <h3>領取序號</h3>
+    <div class="word copydiv" id="text">
+      <span class="serial">01234567890123456789</span>
+    </div>
+    <p>複製序號進入遊戲達成完成兌換</p>
+    <div class="word">
+      <input type="button" class="btn btn-default" data-clipboard-action="copy" data-clipboard-target=".copydiv" id="wordbtn" value="複製"/>
+    </div>
+    
+  </div>
+  <a class="lightbox-close" href="#">
+  </a>
+</div>
+  
+  
+<!--剪貼簿-->
+<script src="js/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+    	alert("已複製到剪貼簿");
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+</body>
+</html>

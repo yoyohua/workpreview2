@@ -1,0 +1,1433 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(../images/bg.jpg);
+	overflow: hidden-x;
+	background-color: #000;
+}
+.wrapper {
+	width: 100%;
+  height: 947px;
+  position: relative;
+}
+
+.contents {
+	margin: auto;
+	position: relative;
+	width: 1200px;
+}
+
+.bg_animation{
+    width: 100%;
+    height: 945px;
+    margin-left: 0%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -50;
+}
+
+.slogan{
+    position: absolute;
+    z-index: 99;
+    width: 936px;
+    height: 380px;
+    top:8%;
+    left: 45%;
+}
+
+.zoom-slong{
+  animation: 0.6s 1 forwards;
+  animation-delay: 0.6s;
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+  opacity:0;
+}
+
+
+@-webkit-keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    opacity: 1;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+     opacity: 1;  
+  }
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    opacity: 1;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+       opacity: 1;
+  }
+}
+
+
+.coin_00{
+    position: absolute;
+    z-index:-5;
+    right: -49%;
+    top:0%;
+    width: 100%;
+    height: 374px;   
+}
+
+.tada_coin_00{
+animation: 1s infinite;
+  animation-delay: 0.6s;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  opacity:1; 
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1) ;
+  }
+
+  }
+
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) ;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+}
+
+
+.zoom-01{
+  animation: 2s zoom-bs infinite;
+  animation-delay: 0.2s;
+  -webkit-animation-name: zoom-bs;
+  animation-name: zoom-bs;  
+
+}
+
+@-webkit-keyframes zoom-bs {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: translate3d(0,-3px,0);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes zoom-bs {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: translate3d(0,-3px,0);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+  width: 6px;
+}
+/*滑道颜色*/
+::-webkit-scrollbar-track {
+ /* background-color: rgba(255,255,255,0.4);*/
+}
+
+/*滚动条颜色*/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(143,132,114,0.6);
+  border-radius: 50px;
+}
+/*上下箭头颜色*/
+::-webkit-scrollbar-button {  
+    background-color: none;
+}
+/*横竖滚动条交角*/ 
+::-webkit-scrollbar-corner {  
+    background-color: none;  
+} 
+/*IE*/
+body{ 
+    scrollbar-face-color: rgba(143,132,114,0.6); /*滚动条颜色*/  
+    scrollbar-arrow-color: none; /*上下箭头颜色*/ 
+    scrollbar-3dlight-color: none; /*左侧外边线颜色*/  
+    scrollbar-highlight-color: none; /*左侧内边线颜色*/  
+    scrollbar-shadow-color: none; /*右内边线颜色*/  
+    scrollbar-darkshadow-color: none; /*右外边线颜色*/  
+    scrollbar-track-color: rgba(236, 234, 235, 0.5); /*滑道颜色*/  
+}
+
+.Main-Contents .scroll-box {
+  overflow-x: hidden;
+  height: 500px;
+}
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+
+/*TOP*/
+.Top-bar {
+  height: 30px;
+  padding: 15px 0;
+}
+.loadingIn {
+}
+.loadingOut {
+}
+.Top-bar .top-btn {
+  float: right;
+  margin: 0 1%;
+  height: 30px;
+  overflow: hidden;
+}
+
+#top-btn-loadingIn {
+  width: 110px;
+  height: 30px;
+  background-image: url(../images/loadingIn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+#top-btn-home {
+  width: 110px;
+  height: 30px;
+  transition: all 400ms ease;
+  background-image: url(../images/home.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  
+}
+#top-btn-loadingIn:hover {
+  width: 110px;
+  height: 30px;
+  background-image: url(../images/loadingIn-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+#top-btn-home:hover{
+  width: 110px;
+  height: 30px;
+  transition: all 400ms ease;
+  background-image: url(../images/home-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.loadingOut .top-btn p {
+  width: auto;
+  color: #FFFFFF;
+  font-size: 1.4vmin;
+  height: 30px;
+  line-height: 30px;
+}
+.loadingOut .top-btn p span {
+  color: #ff007e;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.4vmin;
+}
+.loadingOut .top-btn a {
+  width: 40px;
+  color: #FFFFFF;
+  font-size: 1.4vmin;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.loadingOut .top-btn a:hover {
+  color: #04f7e8;
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+
+.header {
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+}
+.header .Main-menu {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 32% 0 0 30%;
+}
+.menu_01 {
+  width: 203px;
+  height: 217px;
+  display: inline-block;
+  margin: 0 1%;
+  cursor: pointer;
+  transform-origin: center;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.menu_02 {
+  width: 203px;
+  height: 217px;
+  display: inline-block;
+  margin: 0 1%;
+  cursor: pointer;
+  transform-origin: center;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.header .Main-menu .menu .menu-btn {
+  display: inline-block;
+}
+
+
+
+.menu_01 #menu01 {
+  width: 203px;
+  height: 217px;
+  background-image: url(../images/muen01.png);
+  background-repeat: no-repeat;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-0deg);
+  -moz-transform: rotateY(-0deg);
+  transform: rotateY(-0deg);
+  position: relative;
+  float: left;    
+
+}
+
+
+  
+.menu_02 #menu02 {
+  width: 203px;
+  height: 217px;
+  background-image: url(../images/muen02.png);
+  background-repeat: no-repeat;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-0deg);
+  -moz-transform: rotateY(-0deg);
+  transform: rotateY(-0deg);
+  position: relative;
+  top:10%;
+  float: left;
+ 
+}
+    
+
+.menu_01 #menu03 {
+  width: 203px;
+  height: 217px;
+  background-image: url(../images/muen03.png);
+  background-repeat: no-repeat;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-0deg);
+  -moz-transform: rotateY(-0deg);
+  transform: rotateY(-0deg);
+  position:relative;
+    float: left;
+}
+
+.menu_02 #menu04 {
+  width: 203px;
+  height: 217px;
+  background-image: url(../images/muen04.png);
+  background-repeat: no-repeat;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(-0deg);
+  -moz-transform: rotateY(-0deg);
+  transform: rotateY(-0deg);
+  position: relative;
+    float: left;
+     
+
+}
+
+.menu_01:hover #menu01 ,.menu:focus #menu01 ,.menu:visited #menu01 {
+  background-image: url(../images/muen01-2.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+
+}
+.menu_02:hover #menu02 ,.menu:focus #menu02 ,.menu:visited #menu02 {
+  background-image: url(../images/muen02-2.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+.menu_01:hover #menu03 ,.menu:focus #menu03 ,.menu:visited #menu03 {
+  background-image: url(../images/muen03-2.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+.menu_02:hover #menu04 ,.menu:focus #menu04 ,.menu:visited #menu04 {
+  background-image: url(../images/muen04-2.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*活動一*/
+.section-box {
+  min-width: 1200px;
+  min-height: 650px;
+  background-image: url(../images/lightbos-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+
+}
+
+/*左邊按扭群*/
+.lightbox-menu {
+  width: 170px;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  font-size: 0;
+  left: 2.9%;
+  top: 10%;
+}
+.lightbox-menu a {
+  margin: 5% 0;
+}
+
+
+.box-menu01 {
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen01.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+.box-menu02 {
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen02.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+.box-menu03 {
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen03.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+.box-menu04 {
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen04.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+
+.box-menu01:hover ,.box-menu01.ative{
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen01-2.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+.box-menu02:hover ,.box-menu02.ative{
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen02-2.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+.box-menu03:hover ,.box-menu03.ative{
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen03-2.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+.box-menu04:hover ,.box-menu04.ative{
+  width: 170px;
+  height: 50px;
+  background-image: url(../images/box-muen04-2.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: inline-block;
+}
+
+/*內容*/
+.Main-Contents {
+  width: 76%;
+  height: 840px;
+  /*background-color: #C89797;*/
+  box-sizing: border-box;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  padding: 5% 2%;
+  overflow: hidden;
+}
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+#Section01 {
+}
+#Section01 .Main-Contents .main-Title {
+  width: 100%;
+}
+#Section01 .Main-Contents .title01 {
+  width: 100%;
+  height: 55px;
+  background-image: url(../images/01-header-title.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*FB點讚豪禮*/
+.virtual {
+	height: auto;
+	width: 100%;
+}
+
+.virtual .virtual-step {
+	float: left;
+  padding: 5%;
+  width: 50%;
+  box-sizing: border-box;
+}
+/*底圖線*/
+.Main-Contents .virtual .line-1 {
+  background-image: url(../images/01-line-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.Main-Contents .virtual .line-2 {
+  background-image: url(../images/01-line2-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.virtual .virtual-step2 {
+	float: left;
+  padding: 5%;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.virtual .virtual-step .virtual-step-title ,
+.virtual .virtual-step2 .virtual-step-title {
+	height: 30px;
+	width: 100%;
+  margin: auto;
+}
+/*小標*/
+.virtual .virtual-step .s-title-1{
+  background-image: url(../images/text.png);
+  background-repeat: no-repeat;
+  background-position: -210% 0;
+}
+.virtual .virtual-step .s-title-2{
+  background-image: url(../images/text.png);
+  background-repeat: no-repeat;
+  background-position: -180% -30px;
+}
+.virtual .virtual-step2 .s-title-3{
+  background-image: url(../images/text.png);
+  background-repeat: no-repeat;
+  background-position: 50% -60px;
+}
+
+.virtual .virtual-step .virtual-fb {
+  background-color: #F2F2F2;
+  height: 80px;
+  width: 210px;
+}
+
+.virtual .virtual-step .virtual-descr {
+  height: 20px;
+  width: 100%;
+  background-image: url(../images/text.png);
+  background-repeat: no-repeat;
+  background-position: -190% -90px;
+}
+.virtual .virtual-step2 .virtual-code {
+	font-size: 24px;
+	line-height: 40px;
+	color: #FFF;
+	background-color: #343434;
+	text-align: center;
+	height: 40px;
+	width: 470px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+#fb01 , #fb02{
+  margin: 10px auto;
+}
+.virtual .virtual-present {
+  width: 100%;
+  background-image: url(../images/p-title.png);
+  background-repeat: no-repeat;
+  background-position: 21% top;
+  text-align: center;
+  padding: 4%;
+  box-sizing: border-box;
+  float: left;
+}
+.virtual .virtual-present img {
+}
+
+/*完成點讚*/
+input[type="button"].virtual-btn {
+  display: block;
+  height: 41px;
+  width: 130px;
+  cursor: pointer;
+  border: 0px none;
+  background-image: url(../images/carry01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 10px auto;
+}
+input[type="button"].virtual-btn:hover {
+  background-image: url(../images/carry01-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+#Section02 {
+}
+#Section02 .Main-Contents .main-Title {
+  width: 100%;
+}
+#Section02 .Main-Contents .title02 {
+  width: 100%;
+  height: 55px;
+  background-image: url(../images/02-header-title.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.share-fb {
+	width: 100%;
+	float: left;
+  padding: 2% 10%;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.share-fb .share-fb-title {
+  height: 30px;
+  width: 100%;
+  background-color: #F4F4F4;
+  border-left: 5px solid #DBDBDC;
+  padding: 0 0 0 1%;
+}
+.share-fb .share-fb-title h1 {
+  color: #4F5255;
+  font-size: 14px;
+  line-height: 30px;
+}
+.share-fb .share-fb-title h1 span{
+  color: #c8322d;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.share-fb .share-fb-table {
+	width: 80%;
+	float: left;
+}
+.share-fb .share-fb-table img {
+  margin: 4% auto 2%;
+}
+.share-fb .share-fb-btn {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  padding: 4% 0;
+}
+
+.share-fb .share-fb-btn a{
+  margin: 5% 0;
+  float: left;
+  text-align: center;
+}
+
+/*點擊分享*/
+.share-btn {
+  display: block;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  border: 0px none;
+  background-image: url(../images/share-btn.png);
+  background-repeat: no-repeat;
+}
+input[type="button"].share-btn:hover {
+  background-image: url(../images/share-btn-2.png);
+}
+/*領取獎勵*/
+.share-receive-btn {
+  display: block;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  border: 0px none;
+  background-image: url(../images/share-receive-btn.png);
+  background-repeat: no-repeat;
+}
+.share-receive-btn:hover {
+  background-image: url(../images/share-receive-btn-2.png);  
+}
+
+.share-receive-btn.no-btn {
+  display: block;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  border: 0px none;
+  background-image: url(../images/share-receive-btn-3.png);
+  background-repeat: no-repeat;
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+#Section03 {
+}
+#Section03 .Main-Contents .main-Title {
+  width: 100%;
+}
+#Section03 .Main-Contents .title03 {
+  width: 100%;
+  height: 55px;
+  background-image: url(../images/03-header-title.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.friend-box {
+  overflow-x: hidden;
+  height: 500px;
+}
+
+
+.heading {
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.heading .heading-title {
+  width: 100%;
+  height: 100px;
+  display: block;
+  text-align: center;
+  margin: 5% auto;
+  background-image: url(../images/text2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heading .heading-friend {
+  width: 100%;
+}
+.heading .heading-friend p {
+  color: #4f5255;  
+  font-size: 16px;
+  line-height: 30px;
+}
+.heading-friend p span {
+  font-size: 16px;
+  line-height: 30px;
+  color: #c11a12;
+}
+
+/*禮包*/
+.friend-link {
+	width: 76%;
+  display: block;
+  margin: 2% auto;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.friend-link .friend-link-title {
+	height: 30px;
+  background-color: #F4F4F4;
+  border-left: 5px solid #DBDBDC;
+  padding: 0 0 0 1%;
+}
+.friend-link .friend-link-title p:nth-child(1) {
+	line-height: 30px;
+  float: left;
+}
+.friend-link .friend-link-title .fl-bg {
+  width: 80%;
+  height: 30px;
+	font-size: 16px;
+	color: #4f5255;
+
+}
+.friend-link-title .fl-bg span {
+  color: #c8322d;
+}
+.friend-link .friend-link-title p:nth-child(2) {
+	font-size: 14px;
+  line-height: 30px;
+	color: #4f5255;
+  float: right;
+  margin: 0 2% 0 0;
+}
+.friend-link-title p:nth-child(2) span {
+  color: #c11a12;
+}
+
+
+.friend-link .friend-link-table {
+	height: auto;
+	width: 80%;
+  text-align: center;
+  float: left;
+  display: block;
+}
+.friend-link .friend-link-table p {
+	font-family: "Heiti TC", "微軟正黑體";
+	font-size: 12px;
+	line-height: 20px;
+	color: #F00;
+	text-align: center;
+	display: block;
+	float: right;
+	height: 20px;
+	width: 80px;
+	margin-top: -35px;
+}
+.friend-link .friend-link-table p span {
+}
+
+/*05 好友連結*/
+input[type="text"].friend-line {
+  font-size: 14px;
+  color: #4f5255;
+  height: 30px;
+  width: 40%;
+  border: 0px none;
+  padding: 0 1%;
+  overflow: hidden;
+  background-color: #F4F4F4;  
+}
+
+#wordbtn {
+	font-family: "Heiti TC", "微軟正黑體";
+	font-size: 16px;
+	line-height: 30px;
+	color: #333;
+	text-align: center;
+	height: 30px;
+	width: 60px;
+	cursor: pointer;
+    background-color: #E0E0E0;
+}
+
+
+/*05 領取獎勵*/
+input[type="button"].friend-link-btn {
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  border: 0px none;
+  background-image: url(../images/frind-btn.png);
+  background-repeat: no-repeat;
+  margin: 5% auto;
+}
+input[type="button"].friend-link-btn:hover {
+  background-image: url(../images/frind-btn-2.png);
+}
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+#Section04 {
+}
+#Section04 .Main-Contents .main-Title {
+  width: 100%;
+}
+#Section04 .Main-Contents .title04 {
+  width: 100%;
+  height: 55px;
+  background-image: url(../images/04-header-title.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+/*五日分享*/
+.day-box {
+  width: 100%;
+  padding: 2% 15%;
+  box-sizing: border-box;
+}
+.day-box .day-one {
+  width: 54%;
+  float: left;
+}
+
+.day-box .day-five {
+  width: 36%;
+  float: left;
+}
+
+
+
+
+.nanaday-share {
+	float: left;
+	height: 118px;
+	width: 50%;
+  text-align: center;
+  padding: 8.5% 0 0 0;
+  position: relative;
+}
+
+.nanaday-share .nanaday-share-title {
+	height: 118px;
+	width: 100%;
+  position: relative;
+}
+.nanaday-share .ns-1 {
+  background-image: url(../images/day-1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nanaday-share .ns-2 {
+  background-image: url(../images/day-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nanaday-share .ns-3 {
+  background-image: url(../images/day-3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nanaday-share .ns-4 {
+  background-image: url(../images/day-4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nanaday-share2 .ns-5 {
+  background-image: url(../images/day-5.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*分享*/
+.nanaday-share-check {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  background-image: url(../images/04-share.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.nanaday-share-check:hover ,
+.nanaday-share-check:active ,
+.nanaday-share-check:focus{
+  background-image: url(../images/04-share-2.png);  
+}
+
+/*已分享 已領*/
+.nanaday-share-checkin {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  background-image: url(../images/04-share-3.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+
+/*第五日*/
+.nanaday-share2 {
+	float: left;
+	height: 265px;
+	width: 100%;
+  text-align: center;
+  padding: 12% 0 0 0;
+  position: relative;
+}
+
+.nanaday-share2 .nanaday-share-title {
+	height: 265px;
+	width: 100%;
+}
+.nanaday-share2 .nanaday-share-present {
+  width: 100%;
+  position: absolute;
+  top: 25%
+}
+.nanaday-share2 .nanaday-share-present img {
+}
+
+/*領獎*/
+.nanaday-share-check2 {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  background-image: url(../images/04-share-5.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+
+/*已領獎*/
+.nanaday-share-checkin2 {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  background-image: url(../images/04-share-4.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/*首頁領取紀錄*/
+/*按鈕*/
+.inquire-btn{
+    width: 241px;
+    height: 54px;
+    position: absolute;
+    right: -9%;
+    top:44%;
+    z-index: 100;
+}
+
+/*歷史彈窗*/
+.inquire-box {
+  min-width: 1200px;
+  min-height: 650px;
+  background-image: url(../images/lightbos-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+
+}
+
+#Section05 .inquire-Main-Contents .title05 {
+  width: 100%;
+  height: 55px;
+  background-image:url("../images/05-header-title.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.inquire-Main-Contents{
+    width: 76%;
+    height: 840px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 12%;
+    padding: 3% 2%;
+    overflow: hidden;
+}
+
+/*表格*/
+.a2{
+    overflow-x: hidden;
+    height: 500px; 
+    margin-top: 2%;
+}
+
+.a2-box {
+  box-sizing: border-box;
+  margin: 2% 2% 10% 2%;
+}
+.a2-box .a2-box-table {
+  width: 100%;
+  color:  #4f5255;
+  font-size: 14px;
+  text-align: center;
+}
+
+.a2-box-table tbody tr {
+  
+}
+.a2-box-table tbody tr td {
+  line-height: 2.8vmin;
+  border: thin solid #000000;
+  padding: 1%;
+  width: 100%;
+}
+
+.a2-box-table tbody tr:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold; 
+}
+.a2-box-table tbody tr:nth-child(2) {
+  font-size: 1.3vmin;
+}
+.a2-box-table tbody td:nth-child(1) {
+  width: 10%;
+}
+.a2-box-table tbody td:nth-child(2) {
+  width: 10%;
+}
+.a2-box-table tbody td:nth-child(3) {
+  width: 10%;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*----------------------------------lightbox---------------------------*/
+
+/*分享成功*/
+#reach .content h3 {
+  font-family: "PingFang SC Medium", "思源黑体 CN Medium";
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #003;
+	text-align: center;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+#reach .content .word {
+	width: 100%;
+  padding: 2% 0;
+  box-sizing: border-box;
+}
+#reach .content p {
+  font-family: "PingFang SC Medium", "思源黑体 CN Medium";
+  color: #EB0000;
+  font-size: 1.5;
+  text-align: center;
+  line-height: 24px;
+}
+
+/*序號框*/
+.serial{
+  font-family: "PingFang SC Medium", "思源黑体 CN Medium";
+	font-size: 14px;
+	line-height: 40px;
+	color: #FFF;
+	background-color: #036;
+	height: 40px;
+	width: 80%;
+	padding-right: 10px;
+	padding-left: 10px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+  border-radius: 2px;
+	
+}
+input[type="button"].btn-default{
+  font-family: "PingFang SC Medium", "思源黑体 CN Medium";
+	font-size: 16px;
+	line-height: 30px;
+	color: #FFF;
+	background-color: #09F;
+	text-align: center;
+	display: block;
+	width: 20%;
+  border-radius: 2px;
+	cursor: pointer;
+	margin-right: auto;
+	margin-left: auto;
+		
+	}
+input[type="button"].btn-default:hover{
+	background-color: #0CF;		
+	}
+
+/*分享不不不成功*/
+#reach-no .content h3 {
+  font-family: "PingFang SC Medium", "思源黑体 CN Medium";
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #003;
+	text-align: center;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+
+/*------------lightbox------*/
+/* 設定好背景層的樣式以及位置 */
+.lightbox-target {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;/* 預設透明度為 0，觸發 :target 後，利用動畫效果調整透明度 */
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	overflow: hidden;
+	z-index: 99999;
+}
+/* 設定內容的樣式及位置(白底區塊) */
+.lightbox-target .content {
+  width: 40%;
+  height: auto;
+  background: #fff;
+  color: #333;
+  margin: auto;
+  padding: 1%;
+  position: relative;
+  top: 40%;
+  left: 30%;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid #fff;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  display: inline-block;
+  overflow: hidden;
+}
+/* 設定圖片的樣式及位置，利用 */
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;/* 預設寬高為 0，觸發 :target 後，利用動畫效果展開寬與高 */
+  max-width: 0%;
+  border: 3px solid #fff;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+/* 當 :target 觸發後，index-target 的透明度為 1；content &amp; img 的寬高為 100% */
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+.lightbox-target:target .content, .lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.lightbox-target:target .lightbox-close {
+  top: 40%;
+}
+
+/* 關閉 Lightbox 按鈕的位置及樣式 */
+.lightbox-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 0 0 30px;
+  box-sizing: border-box;
+  background: #139dd7;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+/* 利用偽元素做出 \ 以及 / 的線條，合併就變成 X 囉 */
+.lightbox-close:before, .lightbox-close:after {
+  content: " ";
+  display: block;
+  height: 20px;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  left: 17px;
+  top: 2px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.lightbox-close:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+

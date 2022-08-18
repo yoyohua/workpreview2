@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset {
+  padding: 0;
+  margin: 0;
+}
+fieldset {
+  border: 0;
+}
+ul {
+  list-style: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, table {
+  display: block;
+}
+a {
+  color: #ffa200;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+}
+a:hover {
+  color: #00D6FF;
+}
+.clear {
+  clear : both;
+}
+.display {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+  text-align: center;
+  height: auto;
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+img, fieldset {
+  border: 0 none;
+}
+ul, ol, li {
+  list-style: none;
+}
+em, address {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+}
+em, i {
+  font-style: normal;
+}
+strong, b {
+  font-weight: normal;
+}
+input, img {
+  vertical-align: middle;
+}
+input {
+  outline: none;
+}
+ input[type="text"]::-webkit-input-placeholder {
+color: #DEDEDF;
+}
+input[type="text"]:-moz-placeholder {
+color: #DEDEDF;
+}
+input[type="text"]::-moz-placeholder {
+color: #DEDEDF;
+}
+input[type="text"]:-ms-input-placeholder {
+color: #DEDEDF;
+}
+ input[type="password"]::-webkit-input-placeholder {
+color: #DEDEDF;
+}
+input[type="password"]:-moz-placeholder {
+color: #DEDEDF;
+}
+input[type="password"]::-moz-placeholder {
+color: #DEDEDF;
+}
+input[type="password"]:-ms-input-placeholder {
+color: #DEDEDF;
+}
+textarea:focus {
+  outline: 0;
+}
+button {
+  border: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  font-family: 'PingFang SC', '思源黑体 CN', 'Helvetica Neue', 'Helvetica', 'STHeitiTC-Light', 'Microsoft JhengHei', 'Arial', 'sans-serif', 'sans-serif', '微軟正黑體';
+  background-color: transparent;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  color: #FFFFFF;
+}
+/*------------------------------------------------------------------------------*/
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.no-r {
+  margin-right: 0
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input[type="button"] {
+  cursor: pointer;
+  border: none 0;
+  outline: none;
+  background-color: inherit;
+  background-color: transparent;/*透明背景 ie*/
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'PingFang SC', '思源黑体 CN', 'Helvetica Neue', 'Helvetica', 'STHeitiTC-Light', 'Microsoft JhengHei', 'Arial', 'sans-serif', 'sans-serif', '微軟正黑體';
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
